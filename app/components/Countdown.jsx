@@ -31,6 +31,20 @@ export default class Countdown extends React.Component {
     }
   }
 
+  componentWillMount () {
+    console.log('componentWillMount');
+  }
+
+  componentDidMount () {
+    console.log('componentDidMount');
+  }
+
+  componentWillUnmount () {
+    console.log('componentDidUnmount');
+    clearInterval(this.timer);
+    this.timer = undefined;
+  }
+
   startTimer () {
     this.timer = setInterval(() => {
       var newCount = this.state.count - 1;
