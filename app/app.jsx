@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { Route, Router, IndexRoute, hashHistory} from 'react-router';
 
 // Load foundations
-require('style!css!foundation-sites/dist/css/foundation.min.css')
 $(document).foundation();
 
 // App css
